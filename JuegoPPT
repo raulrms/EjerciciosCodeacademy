@@ -7,20 +7,27 @@ if(computadoraElige < 0.34){
         } else{
             computadoraElige = "tijera";
             }
-var comparar = function(eleccion1, eleccion2) {
-    if(eleccion1 === eleccion2) {
+var comparar = function(usuarioElige, computadoraElige) {
+    if(usuarioElige === computadoraElige) {
         return "¡Es un empate!";
     }
-    if (eleccion1 == "piedra") {
-         if (eleccion2 == "tijera") {
+    if (usuarioElige == "piedra") {
+         if (computadoraElige == "tijera") {
              return "piedra gana";
          } else {
              return "papel gana";
          }
     }
-    if (eleccion1 == "papel") {
-         if (eleccion2 == "piedra") {
+    if (usuarioElige == "papel") {
+         if (computadoraElige == "piedra") {
              return "papel gana";
+         } else {
+             return "tijera gana";
+         }
+    }
+    if (usuarioElige == "tijera") {
+         if (computadoraElige == "piedra") {
+             return "piedra gana";
          } else {
              return "tijera gana";
          }
