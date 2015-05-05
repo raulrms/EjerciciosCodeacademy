@@ -1,10 +1,10 @@
 var usuarioElige = prompt("¿Piedra, papel o tijera?"); 
 var computadoraElige = Math.random();
-if(computadoraElige <= 0.33){
+if(computadoraElige < 0.34){
     computadoraElige = "piedra";
-    } else if (computadoraElige >= 0.34 || computadoraElige <= 0.66){
+    } else if (computadoraElige <= 0.67){
         computadoraElige = "papel";
         } else{
-            computadoraElige = "papel";
+            computadoraElige = "tijera";
             };
 console.log(computadoraElige);
