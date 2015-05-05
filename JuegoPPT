@@ -6,5 +6,23 @@ if(computadoraElige < 0.34){
         computadoraElige = "papel";
         } else{
             computadoraElige = "tijera";
-            };
-console.log(computadoraElige);
+            }
+var comparar = function(eleccion1, eleccion2) {
+    if(eleccion1 === eleccion2) {
+        return "¡Es un empate!";
+    }
+    if (eleccion1 == "piedra") {
+         if (eleccion2 == "tijera") {
+             return "piedra gana";
+         } else {
+             return "papel gana";
+         }
+    }
+    if (eleccion1 == "papel") {
+         if (eleccion2 == "piedra") {
+             return "papel gana";
+         } else {
+             return "tijera gana";
+         }
+    }
+};
